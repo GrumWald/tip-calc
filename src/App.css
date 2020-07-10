@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(163, 194, 214);
+    color: white;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    height: 100px;
+    background-color: rgb(51, 50, 50);   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+    margin:0;
+    line-height: 100px;
+    margin-left: 2rem;
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tip-form {
+    height: 650px;
+    width: 500px;
+    background-color: rgb(51, 50, 50);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
 }
 
-.App-link {
-  color: #61dafb;
+label {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input, select {
+    box-sizing: border-box;
+    left: 50%;
+    display: block;
+    height: 40px;
+    width: 350px;
+    padding: 5px 10px;
+    margin-top: 0.5rem;
+    font-size: 20px;
+    text-align: center;
 }
+
+select {
+    text-align-last:center;
+}
+
+input[type='submit'] {
+    height: 70px;
+    width: 250px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    background-color:rgba(55, 168, 55, 0.534);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+input[type='submit']:hover {
+    background-color: rgb(55, 168, 55);
+    transition: 0.5s;
+}
+
+.result {
+    margin-top: 1rem;
+    height: 60px;
+    line-height: 60px;
+    width: 400px;
+    border: 1px solid white;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
