@@ -47,7 +47,7 @@ function TipForm() {
                 className='form-input'
                 onChange={e => setGuests( e.target.value)}
             />
-            <input type='submit' value='SPOČÍTAT ÚČET' />
+            <input id='calc' type='submit' value='SPOČÍTAT ÚČET' />
 
             <label>VÝSLEDNÝ ÚČET</label>
             <p className='result'>{finalAmount},- Kč</p>
